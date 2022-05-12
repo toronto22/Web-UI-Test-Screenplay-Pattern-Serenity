@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.example</groupId>
+  <artifactId>Web-UI-Test-Screenplay-Pattern-Serenity</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>Web-UI-Test-Screenplay-Pattern-Serenity</name>
+  <url>http://www.toronto22.info</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <serenity.version>3.2.5</serenity.version>
+    <serenity.maven.version>3.2.5</serenity.maven.version>
+    <parallel.tests>4</parallel.tests>
+    <encoding>UTF-8</encoding>
+    <serenity.test.root></serenity.test.root>
+    <tags></tags>
+  </properties>
+
+  <dependencies>
+      <dependency>
+          <groupId>net.serenity-bdd</groupId>
+          <artifactId>serenity-core</artifactId>
+          <version>${serenity.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>net.serenity-bdd</groupId>
+          <artifactId>serenity-screenplay</artifactId>
+          <version>${serenity.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>net.serenity-bdd</groupId>
+          <artifactId>serenity-screenplay-webdriver</artifactId>
+          <version>${serenity.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>net.serenity-bdd</groupId>
+          <artifactId>serenity-ensure</artifactId>
+          <version>${serenity.version}</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/io.github.fabianlinz/serenity-junit5 -->
+      <dependency>
+          <groupId>io.github.fabianlinz</groupId>
+          <artifactId>serenity-junit5</artifactId>
+          <version>1.6.0</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+      <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-engine</artifactId>
+          <version>5.8.2</version>
+      </dependency>
+  </dependencies>
+
+  <build>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <configuration>
+                  <source>8</source>
+                  <target>8</target>
+              </configuration>
+          </plugin>
+      </plugins>
+  </build>
+</project>
